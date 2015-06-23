@@ -14,15 +14,11 @@
 - (void)geofenceDetectionStart {
     SenseSdkErrorPointer *errorPtr = [SenseSdkErrorPointer create];
     
-    ConditionalElement* activity = [UsersActivity arrivedBy:ActivityTypeAutomotive errorPtr:nil];
-    
     // Fire when the user enters a geofence
     CustomGeofence *hq = [[CustomGeofence alloc] initWithLatitude:37.124 longitude:-127.456 radius:50 customIdentifier:@"Sense 360 Headquarters"];
     CustomGeofence *lunchSpot = [[CustomGeofence alloc] initWithLatitude:37.124 longitude:-127.456 radius:50 customIdentifier:@"A&B Bar and Grill"];
     NSArray *geofences = [[NSArray alloc] initWithObjects:hq,lunchSpot,nil];
-    
-    NSArray *activities = [[NSArray alloc] initWithObjects:activity, nil];
-    Trigger *geofenceTrigger = [FireTrigger whenEntersGeofences: geofences conditions:activities errorPtr:nil];
+    Trigger *geofenceTrigger = [FireTrigger whenEntersGeofences: geofences conditions:nil errorPtr:nil];
     
     if(geofenceTrigger != nil) {
         // Recipe defines what trigger, what time of day and how long to wait between consecutive triggers firing
