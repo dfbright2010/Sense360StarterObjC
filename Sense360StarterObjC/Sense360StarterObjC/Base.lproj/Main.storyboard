@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E26a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fs7-W2-dOH">
+                                <rect key="frame" x="209" y="188" width="182" height="30"/>
+                                <state key="normal" title="Trigger Restauraunt Arrival">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="triggerRestauraunt:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="KHt-vJ-FPN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Voy-mW-1RK">
+                                <rect key="frame" x="230" y="291" width="140" height="30"/>
+                                <state key="normal" title="Trigger Home Arrival">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="triggerHome:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="OEz-AC-K6q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6So-HV-O7M">
+                                <rect key="frame" x="218" y="387" width="165" height="30"/>
+                                <state key="normal" title="Trigger Geofence Arrival">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="triggerGeofence:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Y1C-br-eFF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="6So-HV-O7M" secondAttribute="centerX" constant="-0.5" id="1hy-Jn-sFZ"/>
+                            <constraint firstItem="Voy-mW-1RK" firstAttribute="top" secondItem="Fs7-W2-dOH" secondAttribute="bottom" constant="73" id="9Ca-va-qBn"/>
+                            <constraint firstAttribute="centerX" secondItem="Voy-mW-1RK" secondAttribute="centerX" id="Ogz-iT-9ai"/>
+                            <constraint firstAttribute="centerX" secondItem="Fs7-W2-dOH" secondAttribute="centerX" id="RmT-Oy-gyC"/>
+                            <constraint firstItem="6So-HV-O7M" firstAttribute="top" secondItem="Voy-mW-1RK" secondAttribute="bottom" constant="66" id="SMe-Q4-ydq"/>
+                            <constraint firstItem="Fs7-W2-dOH" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="188" id="UnM-ba-tYV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="geofenceButton" destination="6So-HV-O7M" id="zkl-Tm-spB"/>
+                        <outlet property="homeButton" destination="Voy-mW-1RK" id="0e2-w2-zGk"/>
+                        <outlet property="restaurauntButton" destination="Fs7-W2-dOH" id="nzF-qK-dlU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
