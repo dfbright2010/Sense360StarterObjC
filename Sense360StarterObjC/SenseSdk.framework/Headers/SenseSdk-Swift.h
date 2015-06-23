@@ -90,17 +90,13 @@ typedef struct _NSZone NSZone;
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
-
-SWIFT_CLASS("_TtC8SenseSdk17ActivityCondition")
-@interface ActivityCondition
-@end
-
 typedef SWIFT_ENUM(NSInteger, ActivityType) {
-  ActivityTypeStationary = 1,
-  ActivityTypeWalking = 2,
+  ActivityTypeAutomotive = 1,
+  ActivityTypeCycling = 2,
   ActivityTypeRunning = 3,
-  ActivityTypeAutomotive = 4,
-  ActivityTypeCycling = 5,
+  ActivityTypeStationary = 4,
+  ActivityTypeWalking = 5,
+  ActivityTypeUnknown = 6,
 };
 
 
