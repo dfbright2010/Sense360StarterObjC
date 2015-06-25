@@ -13,15 +13,15 @@
 		33C0EF2A1B38A63700AB5985 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33C0EF281B38A63700AB5985 /* Main.storyboard */; };
 		33C0EF2C1B38A63700AB5985 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33C0EF2B1B38A63700AB5985 /* Images.xcassets */; };
 		33C0EF2F1B38A63700AB5985 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33C0EF2D1B38A63700AB5985 /* LaunchScreen.xib */; };
-		33C0EF451B38A6E500AB5985 /* SenseSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33C0EF441B38A6E500AB5985 /* SenseSdk.framework */; };
 		33C0EF471B38A6F700AB5985 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33C0EF461B38A6F700AB5985 /* CoreLocation.framework */; };
 		33C0EF491B38A6FE00AB5985 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33C0EF481B38A6FE00AB5985 /* SystemConfiguration.framework */; };
 		33C0EF4B1B38A70300AB5985 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 33C0EF4A1B38A70300AB5985 /* libz.dylib */; };
-		33C0EF4C1B38A71A00AB5985 /* SenseSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33C0EF441B38A6E500AB5985 /* SenseSdk.framework */; };
-		33C0EF4D1B38A71A00AB5985 /* SenseSdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 33C0EF441B38A6E500AB5985 /* SenseSdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		33C0EF511B38AA8200AB5985 /* EnteredRestaurantDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C0EF501B38AA8200AB5985 /* EnteredRestaurantDetector.m */; };
 		33C0EF541B38AFF200AB5985 /* EnteredHomeDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C0EF531B38AFF200AB5985 /* EnteredHomeDetector.m */; };
 		33C0EF571B38B2AB00AB5985 /* EnteredGeofenceDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C0EF561B38B2AB00AB5985 /* EnteredGeofenceDetector.m */; };
+		96E6B8551B3BA5B90042C2BF /* SenseSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E6B8541B3BA5B90042C2BF /* SenseSdk.framework */; };
+		96E6B8561B3BA5C60042C2BF /* SenseSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E6B8541B3BA5B90042C2BF /* SenseSdk.framework */; };
+		96E6B8571B3BA5C60042C2BF /* SenseSdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 96E6B8541B3BA5B90042C2BF /* SenseSdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,7 +31,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				33C0EF4D1B38A71A00AB5985 /* SenseSdk.framework in Embed Frameworks */,
+				96E6B8571B3BA5C60042C2BF /* SenseSdk.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,7 +49,6 @@
 		33C0EF291B38A63700AB5985 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		33C0EF2B1B38A63700AB5985 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		33C0EF2E1B38A63700AB5985 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		33C0EF441B38A6E500AB5985 /* SenseSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SenseSdk.framework; sourceTree = "<group>"; };
 		33C0EF461B38A6F700AB5985 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		33C0EF481B38A6FE00AB5985 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		33C0EF4A1B38A70300AB5985 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -59,6 +58,7 @@
 		33C0EF531B38AFF200AB5985 /* EnteredHomeDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnteredHomeDetector.m; sourceTree = "<group>"; };
 		33C0EF551B38B2AB00AB5985 /* EnteredGeofenceDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnteredGeofenceDetector.h; sourceTree = "<group>"; };
 		33C0EF561B38B2AB00AB5985 /* EnteredGeofenceDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnteredGeofenceDetector.m; sourceTree = "<group>"; };
+		96E6B8541B3BA5B90042C2BF /* SenseSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SenseSdk.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,9 +68,9 @@
 			files = (
 				33C0EF4B1B38A70300AB5985 /* libz.dylib in Frameworks */,
 				33C0EF491B38A6FE00AB5985 /* SystemConfiguration.framework in Frameworks */,
-				33C0EF4C1B38A71A00AB5985 /* SenseSdk.framework in Frameworks */,
+				96E6B8561B3BA5C60042C2BF /* SenseSdk.framework in Frameworks */,
+				96E6B8551B3BA5B90042C2BF /* SenseSdk.framework in Frameworks */,
 				33C0EF471B38A6F700AB5985 /* CoreLocation.framework in Frameworks */,
-				33C0EF451B38A6E500AB5985 /* SenseSdk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,9 +81,9 @@
 			isa = PBXGroup;
 			children = (
 				33C0EF4A1B38A70300AB5985 /* libz.dylib */,
+				96E6B8541B3BA5B90042C2BF /* SenseSdk.framework */,
 				33C0EF481B38A6FE00AB5985 /* SystemConfiguration.framework */,
 				33C0EF461B38A6F700AB5985 /* CoreLocation.framework */,
-				33C0EF441B38A6E500AB5985 /* SenseSdk.framework */,
 				33C0EF1D1B38A63700AB5985 /* Sense360StarterObjC */,
 				33C0EF1C1B38A63700AB5985 /* Products */,
 			);
