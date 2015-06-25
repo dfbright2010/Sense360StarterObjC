@@ -22,6 +22,7 @@
 		96BF38D41B3CB2C700277004 /* SenseSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96BF38D31B3CB2C700277004 /* SenseSdk.framework */; };
 		96BF38D51B3CB2D000277004 /* SenseSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96BF38D31B3CB2C700277004 /* SenseSdk.framework */; };
 		96BF38D61B3CB2D000277004 /* SenseSdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 96BF38D31B3CB2C700277004 /* SenseSdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		96BF38DC1B3CB64900277004 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96BF38DB1B3CB64900277004 /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -59,6 +60,7 @@
 		33C0EF551B38B2AB00AB5985 /* EnteredGeofenceDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnteredGeofenceDetector.h; sourceTree = "<group>"; };
 		33C0EF561B38B2AB00AB5985 /* EnteredGeofenceDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnteredGeofenceDetector.m; sourceTree = "<group>"; };
 		96BF38D31B3CB2C700277004 /* SenseSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SenseSdk.framework; sourceTree = "<group>"; };
+		96BF38DB1B3CB64900277004 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96BF38DC1B3CB64900277004 /* CoreMotion.framework in Frameworks */,
 				33C0EF4B1B38A70300AB5985 /* libz.dylib in Frameworks */,
 				33C0EF491B38A6FE00AB5985 /* SystemConfiguration.framework in Frameworks */,
 				96BF38D51B3CB2D000277004 /* SenseSdk.framework in Frameworks */,
@@ -80,6 +83,7 @@
 		33C0EF121B38A63700AB5985 = {
 			isa = PBXGroup;
 			children = (
+				96BF38DB1B3CB64900277004 /* CoreMotion.framework */,
 				33C0EF4A1B38A70300AB5985 /* libz.dylib */,
 				96BF38D31B3CB2C700277004 /* SenseSdk.framework */,
 				33C0EF481B38A6FE00AB5985 /* SystemConfiguration.framework */,
