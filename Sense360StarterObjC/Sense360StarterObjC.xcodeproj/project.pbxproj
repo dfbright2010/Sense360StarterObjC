@@ -19,6 +19,7 @@
 		33C0EF511B38AA8200AB5985 /* EnteredRestaurantDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C0EF501B38AA8200AB5985 /* EnteredRestaurantDetector.m */; };
 		33C0EF541B38AFF200AB5985 /* EnteredHomeDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C0EF531B38AFF200AB5985 /* EnteredHomeDetector.m */; };
 		33C0EF571B38B2AB00AB5985 /* EnteredGeofenceDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C0EF561B38B2AB00AB5985 /* EnteredGeofenceDetector.m */; };
+		33CFEE6D1B3CB73D0079E832 /* NotificationSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CFEE6C1B3CB73D0079E832 /* NotificationSender.m */; };
 		96BF38D41B3CB2C700277004 /* SenseSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96BF38D31B3CB2C700277004 /* SenseSdk.framework */; };
 		96BF38D51B3CB2D000277004 /* SenseSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96BF38D31B3CB2C700277004 /* SenseSdk.framework */; };
 		96BF38D61B3CB2D000277004 /* SenseSdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 96BF38D31B3CB2C700277004 /* SenseSdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -59,6 +60,8 @@
 		33C0EF531B38AFF200AB5985 /* EnteredHomeDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnteredHomeDetector.m; sourceTree = "<group>"; };
 		33C0EF551B38B2AB00AB5985 /* EnteredGeofenceDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnteredGeofenceDetector.h; sourceTree = "<group>"; };
 		33C0EF561B38B2AB00AB5985 /* EnteredGeofenceDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnteredGeofenceDetector.m; sourceTree = "<group>"; };
+		33CFEE6B1B3CB73D0079E832 /* NotificationSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationSender.h; sourceTree = "<group>"; };
+		33CFEE6C1B3CB73D0079E832 /* NotificationSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationSender.m; sourceTree = "<group>"; };
 		96BF38D31B3CB2C700277004 /* SenseSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SenseSdk.framework; sourceTree = "<group>"; };
 		96BF38DB1B3CB64900277004 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -118,6 +121,8 @@
 				33C0EF531B38AFF200AB5985 /* EnteredHomeDetector.m */,
 				33C0EF551B38B2AB00AB5985 /* EnteredGeofenceDetector.h */,
 				33C0EF561B38B2AB00AB5985 /* EnteredGeofenceDetector.m */,
+				33CFEE6B1B3CB73D0079E832 /* NotificationSender.h */,
+				33CFEE6C1B3CB73D0079E832 /* NotificationSender.m */,
 			);
 			path = Sense360StarterObjC;
 			sourceTree = "<group>";
@@ -211,6 +216,7 @@
 				33C0EF271B38A63700AB5985 /* ViewController.m in Sources */,
 				33C0EF541B38AFF200AB5985 /* EnteredHomeDetector.m in Sources */,
 				33C0EF571B38B2AB00AB5985 /* EnteredGeofenceDetector.m in Sources */,
+				33CFEE6D1B3CB73D0079E832 /* NotificationSender.m in Sources */,
 				33C0EF241B38A63700AB5985 /* AppDelegate.m in Sources */,
 				33C0EF211B38A63700AB5985 /* main.m in Sources */,
 			);

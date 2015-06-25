@@ -78,11 +78,9 @@
     SenseSdkErrorPointer *errorPtr = [SenseSdkErrorPointer create];
     
     CustomGeofence *hq = [[CustomGeofence alloc] initWithLatitude:37.124 longitude:-127.456 radius:50 customIdentifier:@"Sense 360 Headquarters"];
-    CustomGeofence *lunchSpot = [[CustomGeofence alloc] initWithLatitude:37.124 longitude:-127.456 radius:50 customIdentifier:@"A&B Bar and Grill"];
-    NSArray *geofences = [[NSArray alloc] initWithObjects:hq,lunchSpot,nil];
     
     // This method should only be used for testing, and will test with the NSArray *geofences
-    NSArray* places = [[NSArray alloc] initWithObjects:geofences, nil];
+    NSArray* places = [[NSArray alloc] initWithObjects:hq, nil];
     [SenseSdkTestUtility fireTriggerFromRecipe:@"ArrivedAtGeofence"
                                confidenceLevel:ConfidenceLevelMedium
                                         places:places
