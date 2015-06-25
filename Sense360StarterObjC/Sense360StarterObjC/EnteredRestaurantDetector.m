@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "EnteredRestaurantDetector.h"
+#import "NotificationSender.h"
 @import SenseSdk;
 
 @implementation EnteredRestaurantDetector
@@ -38,7 +39,15 @@
     NSLog(@"Recipe %@ fired at %@.", [[args recipe] name], [args timestamp]);
     for (TriggerFiredArgs* trigger in [args triggersFired]) {
         for (NSObject <NSCoding, Place>* place in [trigger places]) {
-            NSLog(@"%@", [place description]);
+            NSString *transitionDesc;
+            if(args.recipe.trigger.transitionType == TransitionTypeEnter) {
+                transitionDesc = @"Enter";
+            } else {
+                transitionDesc = @"Exit";
+            }
+            PoiPlace *poiPlace = (PoiPlace*)place;
+            NSString *notificationBody = [[NSString alloc] initWithFormat: @"%@ %@", transitionDesc, poiPlace.description];
+            [NotificationSender send:notificationBody];
         }
     }
 }

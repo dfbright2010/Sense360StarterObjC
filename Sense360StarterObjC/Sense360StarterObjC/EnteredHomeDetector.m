@@ -8,6 +8,7 @@
 
 #import "Foundation/Foundation.h"
 #import "EnteredHomeDetector.h"
+#import "NotificationSender.h"
 @import SenseSdk;
 
 @implementation EnteredHomeDetector
@@ -38,7 +39,16 @@
     NSLog(@"Recipe %@ fired at %@.", [[args recipe] name], [args timestamp]);
     for (TriggerFiredArgs* trigger in [args triggersFired]) {
         for (NSObject <NSCoding, Place>* place in [trigger places]) {
-            NSLog(@"%@", [place description]);
+            NSString *transitionDesc;
+            if(args.recipe.trigger.transitionType == TransitionTypeEnter) {
+                transitionDesc = @"Enter";
+            } else {
+                transitionDesc = @"Exit";
+            }
+            PersonalizedPlace *personalizedPlace = (PersonalizedPlace*)place;
+            NSString *personalizedPlaceType = [PersonalizedPlace getDescriptionOfPersonalizedPlaceType:(int)personalizedPlace.type];
+            NSString *notificationBody = [[NSString alloc] initWithFormat: @"%@ %@", transitionDesc,personalizedPlaceType];
+            [NotificationSender send:notificationBody];
         }
     }
 }

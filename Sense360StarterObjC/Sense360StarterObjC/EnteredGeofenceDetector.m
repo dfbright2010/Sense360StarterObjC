@@ -8,6 +8,7 @@
 
 #import "Foundation/Foundation.h"
 #import "EnteredGeofenceDetector.h"
+#import "NotificationSender.h"
 @import SenseSdk;
 
 @implementation EnteredGeofenceDetector
@@ -16,8 +17,7 @@
     
     // Fire when the user enters a geofence
     CustomGeofence *hq = [[CustomGeofence alloc] initWithLatitude:37.124 longitude:-127.456 radius:50 customIdentifier:@"Sense 360 Headquarters"];
-    CustomGeofence *lunchSpot = [[CustomGeofence alloc] initWithLatitude:37.124 longitude:-127.456 radius:50 customIdentifier:@"A&B Bar and Grill"];
-    NSArray *geofences = [[NSArray alloc] initWithObjects:hq,lunchSpot,nil];
+    NSArray *geofences = [[NSArray alloc] initWithObjects:hq,nil];
     Trigger *geofenceTrigger = [FireTrigger whenEntersGeofences: geofences conditions:nil errorPtr:nil];
     
     if(geofenceTrigger != nil) {
@@ -42,7 +42,15 @@
     NSLog(@"Recipe %@ fired at %@.", [[args recipe] name], [args timestamp]);
     for (TriggerFiredArgs* trigger in [args triggersFired]) {
         for (NSObject <NSCoding, Place>* place in [trigger places]) {
-            NSLog(@"%@", [place description]);
+            NSString *transitionDesc;
+            if(args.recipe.trigger.transitionType == TransitionTypeEnter) {
+                transitionDesc = @"Enter";
+            } else {
+                transitionDesc = @"Exit";
+            }
+            CustomGeofence *geofence = (CustomGeofence*)place;
+            NSString *notificationBody = [[NSString alloc] initWithFormat: @"%@ %@", transitionDesc, geofence.customIdentifier];
+            [NotificationSender send:notificationBody];
         }
     }
 }
