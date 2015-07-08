@@ -20,9 +20,8 @@
 		33C0EF541B38AFF200AB5985 /* EnteredHomeDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C0EF531B38AFF200AB5985 /* EnteredHomeDetector.m */; };
 		33C0EF571B38B2AB00AB5985 /* EnteredGeofenceDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C0EF561B38B2AB00AB5985 /* EnteredGeofenceDetector.m */; };
 		33CFEE6D1B3CB73D0079E832 /* NotificationSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CFEE6C1B3CB73D0079E832 /* NotificationSender.m */; };
-		96BF38D41B3CB2C700277004 /* SenseSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96BF38D31B3CB2C700277004 /* SenseSdk.framework */; };
-		96BF38D51B3CB2D000277004 /* SenseSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96BF38D31B3CB2C700277004 /* SenseSdk.framework */; };
-		96BF38D61B3CB2D000277004 /* SenseSdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 96BF38D31B3CB2C700277004 /* SenseSdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		965EA2B31B4DE12D0058C7C1 /* SenseSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 965EA2B11B4DE1260058C7C1 /* SenseSdk.framework */; };
+		965EA2B41B4DE12D0058C7C1 /* SenseSdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 965EA2B11B4DE1260058C7C1 /* SenseSdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		96BF38DC1B3CB64900277004 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96BF38DB1B3CB64900277004 /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,7 +32,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				96BF38D61B3CB2D000277004 /* SenseSdk.framework in Embed Frameworks */,
+				965EA2B41B4DE12D0058C7C1 /* SenseSdk.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,7 +61,7 @@
 		33C0EF561B38B2AB00AB5985 /* EnteredGeofenceDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnteredGeofenceDetector.m; sourceTree = "<group>"; };
 		33CFEE6B1B3CB73D0079E832 /* NotificationSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationSender.h; sourceTree = "<group>"; };
 		33CFEE6C1B3CB73D0079E832 /* NotificationSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationSender.m; sourceTree = "<group>"; };
-		96BF38D31B3CB2C700277004 /* SenseSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SenseSdk.framework; sourceTree = "<group>"; };
+		965EA2B11B4DE1260058C7C1 /* SenseSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SenseSdk.framework; sourceTree = "<group>"; };
 		96BF38DB1B3CB64900277004 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -73,9 +72,8 @@
 			files = (
 				96BF38DC1B3CB64900277004 /* CoreMotion.framework in Frameworks */,
 				33C0EF4B1B38A70300AB5985 /* libz.dylib in Frameworks */,
+				965EA2B31B4DE12D0058C7C1 /* SenseSdk.framework in Frameworks */,
 				33C0EF491B38A6FE00AB5985 /* SystemConfiguration.framework in Frameworks */,
-				96BF38D51B3CB2D000277004 /* SenseSdk.framework in Frameworks */,
-				96BF38D41B3CB2C700277004 /* SenseSdk.framework in Frameworks */,
 				33C0EF471B38A6F700AB5985 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -88,7 +86,7 @@
 			children = (
 				96BF38DB1B3CB64900277004 /* CoreMotion.framework */,
 				33C0EF4A1B38A70300AB5985 /* libz.dylib */,
-				96BF38D31B3CB2C700277004 /* SenseSdk.framework */,
+				965EA2B11B4DE1260058C7C1 /* SenseSdk.framework */,
 				33C0EF481B38A6FE00AB5985 /* SystemConfiguration.framework */,
 				33C0EF461B38A6F700AB5985 /* CoreLocation.framework */,
 				33C0EF1D1B38A63700AB5985 /* Sense360StarterObjC */,
@@ -147,6 +145,7 @@
 				33C0EF181B38A63700AB5985 /* Frameworks */,
 				33C0EF191B38A63700AB5985 /* Resources */,
 				33C0EF4E1B38A71A00AB5985 /* Embed Frameworks */,
+				965EA2B51B4DE1380058C7C1 /* Remove unused architectures */,
 			);
 			buildRules = (
 			);
@@ -206,6 +205,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		965EA2B51B4DE1380058C7C1 /* Remove unused architectures */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Remove unused architectures";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# http://ikennd.ac/blog/2015/02/stripping-unwanted-architectures-from-dynamic-libraries-in-xcode/\nAPP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\n# This script strips unused architectures\nfind \"$APP_PATH\" -name 'SenseSdk.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\n\nEXTRACTED_ARCHS=()\n\nfor ARCH in $ARCHS\ndo\necho \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\nlipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\nEXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\ndone\n\necho \"Merging extracted architectures: ${ARCHS}\"\nlipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\nrm \"${EXTRACTED_ARCHS[@]}\"\n\necho \"Replacing original executable with thinned version\"\nrm \"$FRAMEWORK_EXECUTABLE_PATH\"\nmv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\ndone";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		33C0EF171B38A63700AB5985 /* Sources */ = {
