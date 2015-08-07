@@ -23,6 +23,7 @@
 		965EA2B31B4DE12D0058C7C1 /* SenseSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 965EA2B11B4DE1260058C7C1 /* SenseSdk.framework */; };
 		965EA2B41B4DE12D0058C7C1 /* SenseSdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 965EA2B11B4DE1260058C7C1 /* SenseSdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		96BF38DC1B3CB64900277004 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96BF38DB1B3CB64900277004 /* CoreMotion.framework */; };
+		96E0D8891B757B2000DC43A0 /* GPXFiles in Resources */ = {isa = PBXBuildFile; fileRef = 96E0D8881B757B2000DC43A0 /* GPXFiles */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -63,6 +64,7 @@
 		33CFEE6C1B3CB73D0079E832 /* NotificationSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationSender.m; sourceTree = "<group>"; };
 		965EA2B11B4DE1260058C7C1 /* SenseSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SenseSdk.framework; sourceTree = "<group>"; };
 		96BF38DB1B3CB64900277004 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		96E0D8881B757B2000DC43A0 /* GPXFiles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GPXFiles; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		33C0EF1D1B38A63700AB5985 /* Sense360StarterObjC */ = {
 			isa = PBXGroup;
 			children = (
+				96E0D8881B757B2000DC43A0 /* GPXFiles */,
 				33C0EF221B38A63700AB5985 /* AppDelegate.h */,
 				33C0EF231B38A63700AB5985 /* AppDelegate.m */,
 				33C0EF251B38A63700AB5985 /* ViewController.h */,
@@ -200,6 +203,7 @@
 			files = (
 				33C0EF2A1B38A63700AB5985 /* Main.storyboard in Resources */,
 				33C0EF2F1B38A63700AB5985 /* LaunchScreen.xib in Resources */,
+				96E0D8891B757B2000DC43A0 /* GPXFiles in Resources */,
 				33C0EF2C1B38A63700AB5985 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
