@@ -36,9 +36,12 @@
     
     // Your user has entered a restaurant!
     
-    NSLog(@"Recipe %@ fired at %@.", [[args recipe] name], [args timestamp]);
     for (TriggerFiredArgs* trigger in [args triggersFired]) {
         for (NSObject <NSCoding, Place>* place in [trigger places]) {
+            
+            //This is where YOU write your custom code.
+            //As an example, we are sending a local notification that describes the transition type and place.
+            //For more information go to: http://sense360.com/docs.html#handling-a-recipe-firing
             NSString *transitionDesc;
             if(args.recipe.trigger.transitionType == TransitionTypeEnter) {
                 transitionDesc = @"Enter";
