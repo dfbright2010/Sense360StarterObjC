@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 @import SenseSdk;
 
-@interface EnteredHomeDetector : NSObject<RecipeFiredDelegate>
+@interface EnteredHomeDetector : NSObject<TriggerFiredDelegate>
 - (void)homeDetectionStart;
 @end

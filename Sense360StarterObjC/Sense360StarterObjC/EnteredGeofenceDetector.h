@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 @import SenseSdk;
 
-@interface EnteredGeofenceDetector : NSObject<RecipeFiredDelegate>
+@interface EnteredGeofenceDetector : NSObject<TriggerFiredDelegate>
 - (void)geofenceDetectionStart;
 @end
