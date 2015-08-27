@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 @import SenseSdk;
 
-@interface EnteredRestaurantDetector : NSObject<RecipeFiredDelegate>
+@interface EnteredRestaurantDetector : NSObject<TriggerFiredDelegate>
 - (void)restaurantDetectionStart;
 @end

@@ -44,7 +44,7 @@
     
     // This method should only be used for testing
     NSArray* places = [[NSArray alloc] initWithObjects:poiPlace, nil];
-    [SenseSdkTestUtility fireTriggerFromRecipe:@"ArrivedAtRestaurant"
+    [SenseSdkTestUtility fireTrigger:@"ArrivedAtRestaurant"
                                confidenceLevel:ConfidenceLevelMedium
                                         places:places
                                       errorPtr:errorPtr];
@@ -65,7 +65,7 @@
     
     // This method should only be used for testing
     NSArray* places = [[NSArray alloc] initWithObjects:personalizedPlace, nil];
-    [SenseSdkTestUtility fireTriggerFromRecipe:@"ArrivedAtHome"
+    [SenseSdkTestUtility fireTrigger:@"ArrivedAtHome"
                                confidenceLevel:ConfidenceLevelMedium
                                         places:places
                                       errorPtr:errorPtr];
@@ -81,7 +81,7 @@
     
     // This method should only be used for testing, and will test with the NSArray *geofences
     NSArray* places = [[NSArray alloc] initWithObjects:hq, nil];
-    [SenseSdkTestUtility fireTriggerFromRecipe:@"ArrivedAtGeofence"
+    [SenseSdkTestUtility fireTrigger:@"ArrivedAtGeofence"
                                confidenceLevel:ConfidenceLevelMedium
                                         places:places
                                       errorPtr:errorPtr];
